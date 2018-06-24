@@ -5,7 +5,8 @@ from flask import Flask
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
 
-print(os.environ['APP_SETTINGS'])
+# Use this to test which config you're using:
+#print(os.environ['APP_SETTINGS'])
 
 @app.route('/')
 def hello():
